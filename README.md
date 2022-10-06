@@ -3,7 +3,7 @@
 ## Learning Goals
 
 - Identify and explain the two groups of stream operations
-- Identify some of the operations in each group
+- Identify the operations in each group
 
 ## The Two Groups of Stream Operations
 
@@ -15,11 +15,13 @@ two groups:
    to perform several intermediate operations before a terminal operation is
    executed.
 2. **Terminal Operation:** These operations produce a result or side-effect from
-   a stream. A stream can have only one terminal operation.
+   a stream. A stream can have only one terminal operation, and it should be the
+   last operation in a pipeline. A stream is consumed once the terminal operation
+   is performed, and can't be used for other intermediate or terminal operations.
 
 ## Operations List
 
-Here are a few intermediate and terminal operations. We’ll look at some these in
+Here are a few intermediate and terminal operations. We’ll look at some of these in
 more detail in the following lessons.
 
 **Intermediate Operations:**
